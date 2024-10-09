@@ -1,252 +1,416 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-*{ margin:0; padding:0;}
-ul,li{ list-style:none;}
-a{ text-decoration:none;}
-.clear{ clear:both;}
-body{ font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;}
-.menu{ display:block; position:fixed; bottom:0; left:0; width:100%; background:#222222; height:60px; z-index:100;}
-.menu li{ float:left; width:20%;}
-.container{ display:block; float:left; width:100%;}
-.first{ display:block; float:left; width:100%; height:100vh; color: rgb(224, 225, 225); background:url(images/background.jpg) no-repeat; background-size:cover;}
-.first img{ display:block; width:200px; height:200px; margin:0 auto; margin-top:100px; border-radius:50%; border:5px solid #dedede; }
-.first .name{ display:block; float:left; width:100%; font-size:40px; color: rgb(224, 225, 225); text-align:center; height:80px; line-height:80px;}
-.first .txt{ display:block; margin:0 auto; width:500px; height:60px; line-height:60px;}
-.first .txt li{ float:left; width:50%; text-align:center;}
-.icon01{ background:url(images/email.png) no-repeat; padding-left:30px; }
-.icon02{ background:url(images/tel.png) no-repeat; padding-left:30px; }
-.icon03{ display:block; float:left; width:100%; height:60px; background:url(images/home.png) no-repeat center; }
-.icon04{ display:block; float:left; width:100%; height:60px; background:url(images/edu.png) no-repeat center; }
-.icon05{ display:block; float:left; width:100%; height:60px; background:url(images/bag.png) no-repeat center; }
-.icon06{ display:block; float:left; width:100%; height:60px; background:url(images/cup.png) no-repeat center; }
-.icon07{ display:block; float:left; width:100%; height:60px; background:url(images/star.png) no-repeat center; }
-.second{ display:block; float:left; width:100%; padding:0 5%; height:auto; color: rgb(224, 225, 225); background-color: rgb(224, 225, 225); margin-bottom:60px;}
-.second .title{ display:block; float:left; width:100%; font-size:45px; color: rgb(34, 34, 34); text-align:center; height:80px; line-height:80px;}
 
-</style>
-  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="css/style.css">
-<title>无标题文档</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+		}
+
+		.menu {
+			display: block;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #222222;
+			height: 60px;
+			z-index: 100;
+		}
+
+		.menu li {
+			float: left;
+			width: 20%;
+		}
+
+		.container {
+			display: block;
+			float: left;
+			width: 100%;
+		}
+
+		.first {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 100vh;
+			color: rgb(224, 225, 225);
+			background: url(images/background.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		.first img {
+			display: block;
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			margin-top: 100px;
+			border-radius: 50%;
+			border: 5px solid #dedede;
+		}
+
+		.first .name {
+			display: block;
+			float: left;
+			width: 100%;
+			font-size: 40px;
+			color: rgb(224, 225, 225);
+			text-align: center;
+			height: 80px;
+			line-height: 80px;
+		}
+
+		.first .txt {
+			display: block;
+			margin: 0 auto;
+			width: 500px;
+			height: 60px;
+			line-height: 60px;
+		}
+
+		.first .txt li {
+			float: left;
+			width: 50%;
+			text-align: center;
+		}
+
+		.icon01 {
+			background: url(images/email.png) no-repeat;
+			padding-left: 30px;
+		}
+
+		.icon02 {
+			background: url(images/tel.png) no-repeat;
+			padding-left: 30px;
+		}
+
+		.icon03 {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 60px;
+			background: url(images/home.png) no-repeat center;
+		}
+
+		.icon04 {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 60px;
+			background: url(images/edu.png) no-repeat center;
+		}
+
+		.icon05 {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 60px;
+			background: url(images/bag.png) no-repeat center;
+		}
+
+		.icon06 {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 60px;
+			background: url(images/cup.png) no-repeat center;
+		}
+
+		.icon07 {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 60px;
+			background: url(images/star.png) no-repeat center;
+		}
+
+		.second {
+			display: block;
+			float: left;
+			width: 100%;
+			padding: 0 5%;
+			height: auto;
+			color: rgb(224, 225, 225);
+			background-color: rgb(224, 225, 225);
+			margin-bottom: 60px;
+		}
+
+		.second .title {
+			display: block;
+			float: left;
+			width: 100%;
+			font-size: 45px;
+			color: rgb(34, 34, 34);
+			text-align: center;
+			height: 80px;
+			line-height: 80px;
+		}
+	</style>
+	<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>无标题文档</title>
 </head>
 
 <body>
-<ul class="menu">
-	<li><a href="#first" class="icon03">&nbsp;</a></li>
-	<li><a href="#second" class="icon04">&nbsp;</a></li>
-	<li><a href="#third" class="icon05">&nbsp;</a></li>
-	<li><a href="#four" class="icon06">&nbsp;</a></li>
-	<li><a href="#five" class="icon07">&nbsp;</a></li>
-</ul>
-<div class="container">
-	<div class="first" id="first">
-    	<img src="images/photo.png" />
-        <div class="name">Ningjing He</div>
-        <ul class="txt">
-        	<li><span class="icon01">210110810511@zufe.edu.cn</span></li>
-            <li><span class="icon02">+86 18857882473</span></li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-    <div class="second" id="second" style="margin-bottom:0;">
-    	<div class="title">Education</div>
-        <div id="timeline">
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
-                <h4 class="time1">09/202 1-06/2025</h4>
-				<div class="timeline-content">
-					<h2>Zhejiang University of Fiance & Economics</h2>
-					<p>
+	<ul class="menu">
+		<li><a href="#first" class="icon03">&nbsp;</a></li>
+		<li><a href="#second" class="icon04">&nbsp;</a></li>
+		<li><a href="#third" class="icon05">&nbsp;</a></li>
+		<li><a href="#four" class="icon06">&nbsp;</a></li>
+		<li><a href="#five" class="icon07">&nbsp;</a></li>
+	</ul>
+	<div class="container">
+		<div class="first" id="first">
+			<img src="images/photo.png" />
+			<div class="name">Ningjing He</div>
+			<ul class="txt">
+				<li><span class="icon01">210110810511@zufe.edu.cn</span></li>
+				<li><span class="icon02">+86 18857882473</span></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="second" id="second" style="margin-bottom:0;">
+			<div class="title">Education</div>
+			<div id="timeline">
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
+					<h4 class="time1">09/202 1-06/2025</h4>
+					<div class="timeline-content">
+						<h2>Zhejiang University of Fiance & Economics</h2>
+						<p>
 						<ul>
-                        	<li><b>Major:</b> Taxation (3.8/4.0)</li>
-                            <li><b>Degree:</b> Economics</li>
-                            <li><b>Highlight Courses:</b> Highlight Courses: Python Programming, Advanced Mathematics, Linear Algebra, Probability and Statistics,Statistics, Microeconomics, Macroeconomics, Finance, Public Finance, Tax M anagement, Public Management</li>
+							<li><b>Major:</b> Taxation (3.8/4.0)</li>
+							<li><b>Degree:</b> Economics</li>
+							<li><b>Highlight Courses:</b> Highlight Courses: Python Programming, Advanced Mathematics, Linear Algebra,
+								Probability and Statistics,Statistics, Microeconomics, Macroeconomics, Finance, Public Finance, Tax M
+								anagement, Public Management</li>
 						</ul>
-					</p>
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
-				<div class="timeline-content right">
-					<h2>Awards</h2>
-					<p>
-                    	<ul>
-                        	<li>03/2024: Zhejiang University of Finance and Economics Student Model of the Year 2024 (Top 10 of 3000)</li>
-                            <li>11/2024&11/2023: Zhejiang Provincial Government Scholarship(Twice)</li>
-                            <li>11/2024&11/2023: First-class Scholarship of Zhejiang University of Finance and Economics(Twice)</li>
-                            <li>05/2024: The 7th Fiscal Honker of Zhejiang University of Finance and Economics 'Smart Fiscal'</li>
-                        </ul>
-					</p>
-				</div>
-			</div>
-
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
-				<div class="timeline-content">
-					<h2>Competiton</h2>
-					<p>
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
+					<div class="timeline-content right">
+						<h2>Awards</h2>
+						<p>
 						<ul>
-                        	<li>12/2023:Zhejiang E-commerce Competition (First Prize )(Leader of the Team)</li>
-                            <li>10/2023:National College Student F inance and Taxation Forum (Second Prize)(The First Author)</li>
-                            <li>04/2024:Zhejiang Economic Case Management Competition(Second Prize)(Leader of the Team)</li>
-                        </ul>
-					</p>
+							<li>03/2024: Zhejiang University of Finance and Economics Student Model of the Year 2024 (Top 10 of 3000)
+							</li>
+							<li>11/2024&11/2023: Zhejiang Provincial Government Scholarship(Twice)</li>
+							<li>11/2024&11/2023: First-class Scholarship of Zhejiang University of Finance and Economics(Twice)</li>
+							<li>05/2024: The 7th Fiscal Honker of Zhejiang University of Finance and Economics 'Smart Fiscal'</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/edu-w.png" style="margin:11px;" /></div>
+					<div class="timeline-content">
+						<h2>Competiton</h2>
+						<p>
+						<ul>
+							<li>12/2023:Zhejiang E-commerce Competition (First Prize )(Leader of the Team)</li>
+							<li>10/2023:National College Student F inance and Taxation Forum (Second Prize)(The First Author)</li>
+							<li>04/2024:Zhejiang Economic Case Management Competition(Second Prize)(Leader of the Team)</li>
+						</ul>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-    </div>
-    <div class="second" id="third" style="margin-bottom:0; background:rgb(34, 34, 34); color: rgb(224, 225, 225);">
-    	<div class="title" style=" color: rgb(224, 225, 225);">Experience</div>
-        <div id="timeline">
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-                <h4 class="time1" style=" color: rgb(224, 225, 225);">10/2021-NOW</h4>
-				<div class="timeline-content">
-					<h2>Hangzhou Qinghe New MaterialCo. (Family Business), Acting General Manager</h2>
-					<p>
-						Reached business cooperation with leading enterprises in paper products industry in many countries, such as the Philippines, and reached a number of million overseas orders.
-					</p>
+		<div class="second" id="third" style="margin-bottom:0; background:rgb(34, 34, 34); color: rgb(224, 225, 225);">
+			<div class="title" style=" color: rgb(224, 225, 225);">Experience</div>
+			<div id="timeline">
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time1" style=" color: rgb(224, 225, 225);">10/2021-NOW</h4>
+					<div class="timeline-content">
+						<h2>Hangzhou Qinghe New MaterialCo. (Family Business), Acting General Manager</h2>
+						<p>
+							Reached business cooperation with leading enterprises in paper products industry in many countries, such
+							as the Philippines, and reached a number of million overseas orders.
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time2" style=" color: rgb(224, 225, 225);">06/2022-08/2022</h4>
-                <div class="timeline-content right">
-					<h2>Hangzhou Depth Biotechnology Co, Biostatistics Intern</h2>
-					<p>
-                    	Using statistical software like R and SAS and processing data from lung cancer patients, plotted survival curves, and built regression models.
-					</p>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time2" style=" color: rgb(224, 225, 225);">06/2022-08/2022</h4>
+					<div class="timeline-content right">
+						<h2>Hangzhou Depth Biotechnology Co, Biostatistics Intern</h2>
+						<p>
+							Using statistical software like R and SAS and processing data from lung cancer patients, plotted survival
+							curves, and built regression models.
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time1" style=" color: rgb(224, 225, 225);">06/2023-08/2023</h4>
-				<div class="timeline-content">
-					<h2>China A cademy of Information and Communications Tec hnology I nnovation Rese arch Institute Co.,Data Analysis Intern</h2>
-					<p>
-						Implemented advanced models like neural networks and gradient boosting to analyze 5G data.
-					</p>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time1" style=" color: rgb(224, 225, 225);">06/2023-08/2023</h4>
+					<div class="timeline-content">
+						<h2>China A cademy of Information and Communications Tec hnology I nnovation Rese arch Institute Co.,Data
+							Analysis Intern</h2>
+						<p>
+							Implemented advanced models like neural networks and gradient boosting to analyze 5G data.
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time2" style=" color: rgb(224, 225, 225);">09/2021-Now</h4>
-                <div class="timeline-content right">
-					<h2>Hangzhou SmartStore Information Technology Service Co,.Principal, Legal Representative and Executive Director</h2>
-					<p>
-                    	Responsible for daily cooperation with partner companies, with operational revenue projects in various locations in Yuhang District, Hangzhou, Zhejiang Province.
-					</p>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time2" style=" color: rgb(224, 225, 225);">09/2021-Now</h4>
+					<div class="timeline-content right">
+						<h2>Hangzhou SmartStore Information Technology Service Co,.Principal, Legal Representative and Executive
+							Director</h2>
+						<p>
+							Responsible for daily cooperation with partner companies, with operational revenue projects in various
+							locations in Yuhang District, Hangzhou, Zhejiang Province.
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time1" style=" color: rgb(224, 225, 225);">07/2023</h4>
-				<div class="timeline-content">
-					<h2>Xiamen University's International Tax Law Academic Summer School</h2>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time1" style=" color: rgb(224, 225, 225);">07/2023</h4>
+					<div class="timeline-content">
+						<h2>Xiamen University's International Tax Law Academic Summer School</h2>
+					</div>
 				</div>
-			</div>
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time2" style=" color: rgb(224, 225, 225);">08/2023</h4>
-                <div class="timeline-content right">
-					<h2>Research on the Current Development Status of W encheng County and Analysis of Common Prosperity Development among 26 Mountainous Counties(Leader of the Team)</h2>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time2" style=" color: rgb(224, 225, 225);">08/2023</h4>
+					<div class="timeline-content right">
+						<h2>Research on the Current Development Status of W encheng County and Analysis of Common Prosperity
+							Development among 26 Mountainous Counties(Leader of the Team)</h2>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png" style="margin:11px;" /></div>
-				<h4 class="time1" style=" color: rgb(224, 225, 225);">04/2023</h4>
-				<div class="timeline-content">
-					<h2>Volunteer at the 4th United Nations World Data Forum</h2>
+				<div class="timeline-item">
+					<div class="timeline-icon" style="background:#fff; border-radius:0;"><img src="images/icon01.png"
+							style="margin:11px;" /></div>
+					<h4 class="time1" style=" color: rgb(224, 225, 225);">04/2023</h4>
+					<div class="timeline-content">
+						<h2>Volunteer at the 4th United Nations World Data Forum</h2>
+					</div>
 				</div>
 			</div>
 		</div>
-    </div>
-    <div class="second" id="four" style="margin-bottom:0;">
-    	<div class="title">Academic Achievement</div>
-        <div id="timeline">
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
-				<h4 class="time1" style="font-size:40px;">Research</h4>
-				<div class="timeline-content">
-					<h2>Internet of Things - A study on management of expiring food products based on blockchain technology,Leader of the project</h2>
-					<p>
-						Using blockchain technology to analyze the information processing in the field of expired food industry; using the
-model building method to build an articulated management network that includes upstream and downstream enterprises of expired food.
-					</p>
-                    <p>&nbsp;</p>
-					<h2>Research on Interactive Application of New Energy Material Supply and Demand Selection--High-Nickel Regulator, Leader of the project</h2>
-					<p>
-						Proposed exploring interactive supply-demand selection applications for new energy materials, and establishing a
-supply-demand interaction app based on the high-nickel industry chain, utilizing matching algorithms and recommendation systems to intelligently match with supply-side enterprises.
-					</p>
+		<div class="second" id="four" style="margin-bottom:0;">
+			<div class="title">Academic Achievement</div>
+			<div id="timeline">
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
+					<h4 class="time1" style="font-size:40px;">Research</h4>
+					<div class="timeline-content">
+						<h2>Internet of Things - A study on management of expiring food products based on blockchain
+							technology,Leader of the project</h2>
+						<p>
+							Using blockchain technology to analyze the information processing in the field of expired food industry;
+							using the
+							model building method to build an articulated management network that includes upstream and downstream
+							enterprises of expired food.
+						</p>
+						<p>&nbsp;</p>
+						<h2>Research on Interactive Application of New Energy Material Supply and Demand Selection--High-Nickel
+							Regulator, Leader of the project</h2>
+						<p>
+							Proposed exploring interactive supply-demand selection applications for new energy materials, and
+							establishing a
+							supply-demand interaction app based on the high-nickel industry chain, utilizing matching algorithms and
+							recommendation systems to intelligently match with supply-side enterprises.
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
-                <h4 class="time2" style="font-size:40px;">Publications</h4>
-                <div class="timeline-content right">
-					<h2>Research on accurate prediction of vegetable commodity pricing strategy and dynamic replenishment quantity based on optimization model</h2>
-                    <p><i>First author and corresponding author</i></p>
-                    <p>Published on International Jourmal of Innovation and Research in Educational Sciences</p>
-                    <p>&nbsp;</p>
-                    <h2>Research on accurate prediction of vegetable commodity pricing strategy and dynamic replenishment quantity
-based on optimization model</h2>
-					<p><i>First author and corresponding author</i></p>
-                    <p>Published on Jourmal of Innovations in Economics & Management</p>
-                    <p>&nbsp;</p>
-					<h2>Study on Cycle Performance and Rate Performance of Lithium Cobalt Oxide</h2>
-                    <p><i>First author and corresponding author</i></p>
-                    <p>Published on Journal of Globe Scientific Reports</p>
-                    <p>&nbsp;</p>
-                    <h2>Price-Predicting Model: Predictions for All Sailboats</h2>
-                    <p><i>First author and corresponding author</i></p>
-                    <p>Published on Journal ofInnovations in Economics & Management</p>
-                    <p>&nbsp;</p>
-                    <h2>Software Copyrights (China Patent & Copyright Official Website)</h2>
-                    <p>Food Safety Oriented Information Traceability and Decision Aid System V1.0</p>
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
+					<h4 class="time2" style="font-size:40px;">Publications</h4>
+					<div class="timeline-content right">
+						<h2>Research on accurate prediction of vegetable commodity pricing strategy and dynamic replenishment
+							quantity based on optimization model</h2>
+						<p><i>First author and corresponding author</i></p>
+						<p>Published on International Jourmal of Innovation and Research in Educational Sciences</p>
+						<p>&nbsp;</p>
+						<h2>Research on accurate prediction of vegetable commodity pricing strategy and dynamic replenishment
+							quantity
+							based on optimization model</h2>
+						<p><i>First author and corresponding author</i></p>
+						<p>Published on Jourmal of Innovations in Economics & Management</p>
+						<p>&nbsp;</p>
+						<h2>Study on Cycle Performance and Rate Performance of Lithium Cobalt Oxide</h2>
+						<p><i>First author and corresponding author</i></p>
+						<p>Published on Journal of Globe Scientific Reports</p>
+						<p>&nbsp;</p>
+						<h2>Price-Predicting Model: Predictions for All Sailboats</h2>
+						<p><i>First author and corresponding author</i></p>
+						<p>Published on Journal ofInnovations in Economics & Management</p>
+						<p>&nbsp;</p>
+						<h2>Software Copyrights (China Patent & Copyright Official Website)</h2>
+						<p>Food Safety Oriented Information Traceability and Decision Aid System V1.0</p>
 
+					</div>
 				</div>
-			</div>
 
-			<div class="timeline-item">
-				<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
-				<h4 class="time1">Skills & English</h4>
-				<div class="timeline-content">
-					<p>
-						<b>Skills:</b> Python, R, SAS, Machine Learning, SPSS, ERP
-                    </p>
-                    <p>
-                    	<b>English:</b> TOEFL(94)
-					</p>
+				<div class="timeline-item">
+					<div class="timeline-icon"><img src="images/cup-w.png" style="margin:11px;" /></div>
+					<h4 class="time1">Skills & English</h4>
+					<div class="timeline-content">
+						<p>
+							<b>Skills:</b> Python, R, SAS, Machine Learning, SPSS, ERP
+						</p>
+						<p>
+							<b>English:</b> TOEFL(94)
+						</p>
+					</div>
 				</div>
+
 			</div>
-			 
 		</div>
-    </div>
-    <div class="second" id="five" style=" background:rgb(34, 34, 34); color: rgb(224, 225, 225);">
-    	<div class="title" style=" color: rgb(224, 225, 225);">Project</div>
-        <div class="box01" style=" margin:30px 0;">
-            	<iframe src="ppt.pptx" width="100%" height="590" frameborder="0" scrolling="no"></iframe>
-        </div>
-		<p align="center" style=" color:#fff;">Drag to see all ppts</p>
-        <div class="box01" style=" margin:30px 0;">
-            	<iframe src="project文字.doc#toolbar=0" width="100%" height="590" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <div class="box01" style=" margin:30px 0;">
-            	<iframe src="Polar_Sea_Ice_Prediction_mLSTM.html" width="100%" height="590"></iframe>
-        </div>
-		<p align="center" style=" color:#fff;">Drag to see all ppts</p>
-    </div>
+		<div class="second" id="five" style=" background:rgb(34, 34, 34); color: rgb(224, 225, 225);">
+			<div class="title" style=" color: rgb(224, 225, 225);">Project</div>
+			<div class="box01" style=" margin:30px 0;">
+				<iframe src="ppt.pptx" width="100%" height="590" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<p align="center" style=" color:#fff;">Drag to see all ppts</p>
+			<div class="box01" style=" margin:30px 0;">
+				<iframe src="project文字.doc#toolbar=0" width="100%" height="590" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="box01" style=" margin:30px 0;">
+				<iframe src="Polar_Sea_Ice_Prediction_mLSTM.html" width="100%" height="590"></iframe>
+			</div>
+			<p align="center" style=" color:#fff;">Drag to see all ppts</p>
+		</div>
 
-</div>
+	</div>
 </body>
-    <script src="js/index.js"></script>
+<script src="js/index.js"></script>
+
 </html>
